@@ -14,12 +14,12 @@ public class LC1337 {
                 {1, 1, 1, 1, 1, 0, 0},
                 {1, 1, 1, 1, 1, 1, 1}
         };
-         mat = new int[][]{
-                {1, 0},
-                {1, 0},
-                {1, 0},
-                {1, 1}
-        };
+//         mat = new int[][]{
+//                {1, 0},
+//                {1, 0},
+//                {1, 0},
+//                {1, 1}
+//        };
         int k = 3;
         //Arrays.stream(mat).forEach(p-> System.out.println(Arrays.toString(p)));
 
