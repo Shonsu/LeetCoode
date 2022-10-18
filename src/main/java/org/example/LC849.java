@@ -2,7 +2,7 @@ package org.example;
 
 public class LC849 {
     public static void main(String[] args) {
-        int[] input = new int[]{0, 0, 0, 1, 0, 0, 1};
+        int[] input = new int[]{0, 0, 0, 1, 0, 0, 1, 0, 0, 0};
         System.out.println(maxDistToClosest(input));
     }
 
