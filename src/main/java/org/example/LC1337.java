@@ -14,14 +14,8 @@ public class LC1337 {
                 {1, 1, 1, 1, 1, 0, 0},
                 {1, 1, 1, 1, 1, 1, 1}
         };
-//         mat = new int[][]{
-//                {1, 0},
-//                {1, 0},
-//                {1, 0},
-//                {1, 1}
-//        };
+
         int k = 3;
-        //Arrays.stream(mat).forEach(p-> System.out.println(Arrays.toString(p)));
 
         int[] tmp = kWeakestRows(mat, k);
         System.out.println(Arrays.toString(tmp));
@@ -98,26 +92,17 @@ public class LC1337 {
 
         while (i < n1 && j < n2) {
             if (L[i][0] <= R[j][0]) {
-                A[k] = L[i];
-                k++;
-                i++;
-
+                A[k++] = L[i++];
             } else {
-                A[k] = R[j];
-                k++;
-                j++;
+                A[k++] = R[j++];
             }
         }
 
         while (i < n1) {
-            A[k] = L[i];
-            k++;
-            i++;
+            A[k++] = L[i++];
         }
         while (j < n2) {
-            A[k] = R[j];
-            k++;
-            j++;
+            A[k++] = R[j++];
         }
     }
 }
